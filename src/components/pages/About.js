@@ -1,18 +1,18 @@
 import React from 'react';
 
-const stylesheet = {
-            header: {
-                backgroundColor: "purple",
-                color: "yellow", border: "2px solid green",
-                marginright: "20px",
-                backgroudposition: "right"
-            }
-        }
+// const stylesheet = {
+//             header: {
+//                 backgroundColor: "purple",
+//                 color: "yellow", border: "2px solid green",
+//                 marginright: "20px",
+//                 backgroudposition: "right"
+//             }
+//         }
 
 export default function About() {
   return (
     <div>
-      <h1 style={stylesheet.header}>About Me</h1>
+      <h1>About Me</h1>
       <p>
         Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
         Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
