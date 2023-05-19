@@ -8,14 +8,13 @@ function Resume() {
     'CSS',
     'Node.js',
     'MongoDB',
-    // Add more proficiencies as needed
   ];
 
   return (
     <div>
       <h2>Resume</h2>
       <p>Download my resume:</p>
-      <a href="/path/to/resume.pdf" download>Download Resume</a>
+      <a href="../../Assets/Yoel.pdf" download>Download Resume</a>
 
       <h3>Proficiencies</h3>
       <ul>
