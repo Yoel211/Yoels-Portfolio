@@ -1,16 +1,3 @@
-// import React from 'react';
-
-// export default function About() {
-//   return (
-//     <div>
-//       <h1>About Me</h1>
-//       <p>
-//       This is my first attempt in making my Portfolio!
-//       </p>
-//     </div>
-//   );
-// }
-
 import React from 'react';
 import { FaGithub, FaLinkedin, FaStackOverflow, FaTwitter } from 'react-icons/fa';
 
@@ -24,8 +11,22 @@ function About() {
     <div>
         <h1>About Me</h1>
         <p> 
-        I am a Full Stack Web Developer with a background in the medical field. I have a passion for learning and problem solving. I am a team player and I am always looking for ways to improve my skills. I am a graduate of the University of Central Florida Coding Bootcamp. I am currently looking for a position as a Full Stack Web Developer.
+        I am a Full Stack Web Developer with a background in the medical field. I have a passion for learning and problem solving. I am a team player and I am always looking for ways to improve my skills. I am a graduate of the University of Denver Coding Bootcamp. I am currently looking for a position as a Full Stack Web Developer.
         </p>
+
+        <h2>Skills</h2>
+        <p>
+        HTML, CSS, JavaScript, jQuery, Bootstrap, React.js, Node.js, Express.js, SQL, MongoDB, Mongoose, Git, GitHub, Heroku, and Terminal.
+        </p>
+
+        <h2>Education</h2>
+        <p>
+        University of Denver Coding Bootcamp
+        </p>
+        <p>
+            Metropolitain State University of Denver
+        </p>
+       
       <footer>
         <a href={githubUrl} target="_blank" rel="noopener noreferrer">
           <FaGithub />
