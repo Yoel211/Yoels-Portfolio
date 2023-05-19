@@ -42,14 +42,19 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
+    if (name.trim() === '') {
+        setErrors((prevErrors) => ({
+            ...prevErrors,
+            name: 'This field is required.',
+        }));
+        }
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>
+      <label className='colm-1'>
         Name:
-        <input
+        <input className='colm-2'
           type="text"
           name="name"
           value={name}
@@ -59,9 +64,9 @@ function Contact() {
         {errors.name && <span>{errors.name}</span>}
       </label>
       <br />
-      <label>
+      <label className='colm-1'>
         Email:
-        <input
+        <input className='colm-2'
           type="email"
           name="email"
           value={email}
@@ -71,9 +76,9 @@ function Contact() {
         {errors.email && <span>{errors.email}</span>}
       </label>
       <br />
-      <label>
+      <label className='colm-1'>
         Message:
-        <textarea
+        <textarea className='colm-2'
           name="message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
@@ -82,7 +87,7 @@ function Contact() {
         {errors.message && <span>{errors.message}</span>}
       </label>
       <br />
-      <button type="submit">Submit</button>
+      <button  className='colm-3' type="submit">Submit</button>
     </form>
   );
 }
