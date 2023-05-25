@@ -33,6 +33,7 @@
     ]
   },
   "browserslist": {
+    "homepage": "https://Yoel211.github.io/Yoels-Portfolio/",
     "production": [
       ">0.2%",
       "not dead",
@@ -42,7 +43,6 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ],
-    "homepage": "https://Yoel211.github.io/Yoels-Portfolio/"
+    ]
   }
 }
