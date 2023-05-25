@@ -2,6 +2,7 @@
   "name": "yoels",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Yoel211.github.io/Yoels-Portfolio/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
@@ -33,7 +34,6 @@
     ]
   },
   "browserslist": {
-    "homepage": "https://Yoel211.github.io/Yoels-Portfolio/",
     "production": [
       ">0.2%",
       "not dead",
