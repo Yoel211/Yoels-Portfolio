@@ -5,7 +5,7 @@ import Portfolio from './components/pages/Portfolio';
 import Resume from './components/pages/Resume';
 import Contact from './components/pages/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import logo from './Assets/images/hydra.png';
+
 
 
 export default function PortfolioContainer() {
@@ -33,49 +33,3 @@ export default function PortfolioContainer() {
     </div>
   );
 }
-
-
-
-//  function App() {
-  
-//     return (
-//       <div className="App">
-//         <Header />
-//         <pages />
-//       </div>
-      
-//     );
-  
-
-//   // function one(){
-//   //   alert("one clicked")
-//   // }
-//   // function two(){
-//   //   alert("two clicked")
-//   // }function three(){
-//   //   alert("three clicked")
-//   // }
-
-//   // return (
-//   //   <div className="App">
-//   //     <header className="App-header">
-//   //     <TestComponent onClick={one} text="peter parker"/>
-//   //       <img src={logo} className="App-logo" alt="logo" />
-//   //       <TestComponent onClick={two} text="Tony Stark"/>
-//   //       <p>
-//   //         Pizza with pineapple is a sin
-//   //       </p>
-//   //       <img src={require("./Assets/images/hydra.png")}></img>
-//   //       <a
-//   //         className="App-link"
-//   //         href="https://reactjs.org"
-//   //         target="_blank"
-//   //         rel="noopener noreferrer"
-//   //       >
-//   //         Learn React
-//   //       </a>
-//   //       <TestComponent onClick={three} text="Virgil Hawkins"/>
-//   //     </header>
-//   //   </div>
-//   // );
-// }}

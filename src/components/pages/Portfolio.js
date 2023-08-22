@@ -6,7 +6,7 @@ export default function Portfolio() {
       <h1>Portfolio Page</h1>
       <a className= 'pic-1'
       href="https://github.com/Yoel211/Stock-Watchers-" target="_blank">
-      <img src={require("../../Assets/images/hydra.png")} alt="Cinque Terre"></img>
+      <img src={require("../../Assets/images/case-management.png")} alt="Cinque Terre"></img>
       </a>
 
       <a className= 'pic-1'
