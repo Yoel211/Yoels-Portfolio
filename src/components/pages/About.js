@@ -11,7 +11,7 @@ function About() {
     <div>
         <h1>About Me</h1>
         <p> 
-        
+        I am a Full Stack Web Developer with a background in the medical field. I have a passion for learning and problem solving. I am a team player and I am always looking for ways to improve my skills. I am a graduate of the University of Denver Coding Bootcamp. I am currently looking for a position as a Full Stack Web Developer.
         </p>
 
         <h2>Skills</h2>
