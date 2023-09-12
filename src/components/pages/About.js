@@ -2,10 +2,10 @@ import React from 'react';
 import { FaGithub, FaLinkedin, FaStackOverflow, FaTwitter } from 'react-icons/fa';
 
 function About() {
-  const githubUrl = 'https://github.com/your-github-profile';
-  const linkedinUrl = 'https://linkedin.com/in/your-linkedin-profile';
-  const thirdPlatformUrl = 'https://third-platform.com/your-profile';
-  const twitterUrl = 'https://twitter.com/your-twitter-profile';
+  const githubUrl = 'https://github.com/Yoel211';
+  const linkedinUrl = 'https://www.linkedin.com/in/yoel-regalado-20a680220/';
+  // const thirdPlatformUrl = 'https://third-platform.com/your-profile';
+  // const twitterUrl = 'https://twitter.com/your-twitter-profile';
 
   return (
     <div>
@@ -34,12 +34,12 @@ function About() {
         <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">
           <FaLinkedin />
         </a>
-        <a href={thirdPlatformUrl} target="_blank" rel="noopener noreferrer">
+        {/* <a href={thirdPlatformUrl} target="_blank" rel="noopener noreferrer">
           <FaStackOverflow />
         </a>
         <a href={twitterUrl} target="_blank" rel="noopener noreferrer">
           <FaTwitter />
-        </a>
+        </a> */}
       </footer>
     </div>
   );

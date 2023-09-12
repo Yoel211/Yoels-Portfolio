@@ -16,7 +16,7 @@ function Contact() {
     } else {
       setErrors((prevErrors) => ({
         ...prevErrors,
-        [name]: '',
+        [name]: '', // Clear the error when validation passes
       }));
     }
   };
@@ -35,30 +35,46 @@ function Contact() {
     } else {
       setErrors((prevErrors) => ({
         ...prevErrors,
-        email: '',
+        email: '', // Clear the error when validation passes
       }));
     }
   };
 
+  const handleChange = (e) => {
+    // Clear the error when the user starts typing again
+    setErrors((prevErrors) => ({
+      ...prevErrors,
+      [e.target.name]: '',
+    }));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (name.trim() === '') {
-        setErrors((prevErrors) => ({
-            ...prevErrors,
-            name: 'This field is required.',
-        }));
-        }
+  
+    // Check if there are any errors in the errors state
+    if (Object.values(errors).every((error) => error === '')) {
+      // All fields are valid, you can submit the form
+      alert('Form submitted successfully'); // Replace this with your actual submission logic
+    } else {
+      // There are errors in the form; you can display an error message or take other actions
+      alert('Please fix the errors in the form');
+    }
   };
+  
 
   return (
     <form onSubmit={handleSubmit}>
       <label className='colm-1'>
         Name:
-        <input className='colm-2'
+        <input
+          className='colm-2'
           type="text"
           name="name"
           value={name}
-          onChange={(e) => setName(e.target.value)}
+          onChange={(e) => {
+            setName(e.target.value);
+            handleChange(e); // Clear the error when typing
+          }}
           onBlur={handleBlur}
         />
         {errors.name && <span>{errors.name}</span>}
@@ -66,11 +82,15 @@ function Contact() {
       <br />
       <label className='colm-1'>
         Email:
-        <input className='colm-2'
+        <input
+          className='colm-2'
           type="email"
           name="email"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => {
+            setEmail(e.target.value);
+            handleChange(e); // Clear the error when typing
+          }}
           onBlur={handleEmailBlur}
         />
         {errors.email && <span>{errors.email}</span>}
@@ -78,35 +98,24 @@ function Contact() {
       <br />
       <label className='colm-1'>
         Message:
-        <textarea className='colm-2'
+        <textarea
+          className='colm-2'
           name="message"
           value={message}
-          onChange={(e) => setMessage(e.target.value)}
+          onChange={(e) => {
+            setMessage(e.target.value);
+            handleChange(e); // Clear the error when typing
+          }}
           onBlur={handleBlur}
         ></textarea>
         {errors.message && <span>{errors.message}</span>}
       </label>
       <br />
-      <button  className='colm-3' type="submit">Submit</button>
+      <button className='colm-3' type="submit">
+        Submit
+      </button>
     </form>
   );
 }
 
 export default Contact;
-
-
-
-
-
-// import React from 'react';
-
-// export default function Contact() {
-//   return (
-//     <div>
-//       <h1>Contact Page</h1>
-//       <p>
-//       Email - yoelregalado7@gmail.com
-//       </p>
-//     </div>
-//   );
-// }
