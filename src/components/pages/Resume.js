@@ -14,7 +14,7 @@ function Resume() {
     <div>
       <h2>Resume</h2>
       <p>Download my resume:</p>
-      <a href="../../Assets/Yoel.pdf" download>Download Resume</a>
+      <a href="../../Assets/_YRegalado- September(2) 2023.pdf" download>Download Resume</a>
 
       <h3>Proficiencies</h3>
       <ul>
